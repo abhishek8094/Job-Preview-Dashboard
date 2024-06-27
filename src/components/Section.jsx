@@ -45,7 +45,7 @@ const Section = () => {
             <div className="font-Poppins font-[400] text-[20px] w-[143px] height-[30px] leading-[30px] text-[#5D5D5D]">
               Delaware, USA
             </div>
-
+            <div className="w-2 h-2 bg-[#D1D1D1] relative top-3 rounded-full"></div>
             <div className="flex w-[168px] h-[30px] gap-[12px]">
               <div>
                 <img
@@ -116,33 +116,58 @@ const Section = () => {
             About the Job
           </span>
           <ol className="py-2">
-            <li className="text-[#3D3D3D] font-Poppins font-[400] ">1. Handle the UI/UX research design</li>
+            <li className="text-[#3D3D3D] font-Poppins font-[400] ">
+              1. Handle the UI/UX research design
+            </li>
             <li className="text-[#3D3D3D] font-Poppins font-[400] ">
               2. Work on researching on latest web applications designs & trends
-            </li >
-            <li className="text-[#3D3D3D] font-Poppins font-[400] ">3. Work on conceptualizing and visualizing</li>
+            </li>
             <li className="text-[#3D3D3D] font-Poppins font-[400] ">
-              4. Work on creating graphics content and other graphic related works
+              3. Work on conceptualizing and visualizing
+            </li>
+            <li className="text-[#3D3D3D] font-Poppins font-[400] ">
+              4. Work on creating graphics content and other graphic related
+              works
             </li>
           </ol>
           <div>
-            <span className="text-[#3D3D3D] font-Poppins font-[400] " > Benefits:</span>
+            <span className="text-[#3D3D3D] font-Poppins font-[400] ">
+              {" "}
+              Benefits:
+            </span>
             <ul>
-              <li className="text-[#3D3D3D] font-Poppins font-[400] "> <span className="font-[700] relative bottom-1">.</span> Health insurance</li>
-              <li className="text-[#3D3D3D] font-Poppins font-[400] "> <span className="font-[700] relative bottom-1">.</span>Provident Fund</li>
+              <li className="text-[#3D3D3D] font-Poppins ml-2 font-[400] ">
+                {" "}
+                <span className="font-[700] relative bottom-1">.</span> Health
+                insurance
+              </li>
+              <li className="text-[#3D3D3D] font-Poppins ml-2 font-[400] ">
+                {" "}
+                <span className="font-[700] relative bottom-1">.</span> Provident
+                Fund
+              </li>
             </ul>
           </div>
           <div>
-            <span className="text-[#3D3D3D] font-Poppins font-[400] " >Schedule</span>
+            <span className="text-[#3D3D3D] font-Poppins font-[400] ">
+              Schedule
+            </span>
             <ul>
-              <li className="text-[#3D3D3D] font-Poppins font-[400] "><span className="font-[700] relative bottom-1" >.</span> Day Shift</li>
+              <li className="text-[#3D3D3D] font-Poppins ml-2 font-[400] ">
+                <span className="font-[700] relative bottom-1">.</span> Day
+                Shift
+              </li>
             </ul>
           </div>
 
           <span className="text-[#3D3D3D] font-Poppins font-[400] ">
             Supplement pay types:
             <ul>
-              <li className="text-[#3D3D3D] font-Poppins font-[400] "> <span className="font-[700] relative bottom-1">.</span> Performance bonus</li>
+              <li className="text-[#3D3D3D] font-Poppins ml-2 font-[400] ">
+                {" "}
+                <span className="font-[700] relative bottom-1">.</span>{" "}
+                Performance bonus
+              </li>
             </ul>
           </span>
         </div>
@@ -153,7 +178,9 @@ const Section = () => {
         <div className=" relative left-10 p-4 m-4 ">
           <div className="flex gap-3 ">
             <img src={AtlassianImg} alt="Atlassian-img" />
-            <span className="flex justify-center items-center text-[#4f4f4f] font-[600]">Atlassian</span>
+            <span className="flex justify-center items-center text-[#4f4f4f] font-[600]">
+              Atlassian
+            </span>
             <button className=" items-center bg-[#E0EBF9] text-[#003788] w-16 h-6 mt-2 font-[700] font-Poppins rounded-md">
               Follow
             </button>
@@ -162,38 +189,60 @@ const Section = () => {
           <div className="flex gap-24 my-5">
             <div className="flex flex-col">
               <div className="flex flex-col">
-                <span className="text-[#6E6D6d] font-Poppins font-[400]">Company size</span>
-                <span className="text-[#3D3D3D font-[400] py-1">1k - 2k Employees</span>
+                <span className="text-[#6E6D6d] font-Poppins font-[400]">
+                  Company size
+                </span>
+                <span className="text-[#3D3D3D font-[400] py-1">
+                  1k - 2k Employees
+                </span>
               </div>
 
               <div className="flex flex-col my-2">
-                <span className="text-[#6E6D6d] font-Poppins font-[400]">Sector</span>
-                <span className="text-[#3D3D3D font-[400] py-1">Information Technology, Infrastructure</span>
+                <span className="text-[#6E6D6d] font-Poppins font-[400]">
+                  Sector
+                </span>
+                <span className="text-[#3D3D3D font-[400] py-1">
+                  Information Technology, Infrastructure
+                </span>
               </div>
 
               <div className="flex flex-col my-2">
-                <span className="text-[#6E6D6d] font-Poppins font-[400]">Founded In</span>
+                <span className="text-[#6E6D6d] font-Poppins font-[400]">
+                  Founded In
+                </span>
                 <span className="text-[#3D3D3D font-[400] py-1">2019</span>
               </div>
             </div>
             <div className="flex flex-col">
               <div className="flex flex-col">
-                <span className="text-[#6E6D6d] font-Poppins font-[400]">Type</span>
+                <span className="text-[#6E6D6d] font-Poppins font-[400]">
+                  Type
+                </span>
                 <span className="text-[#3D3D3D font-[400] my-1">Private</span>
               </div>
               <div className="flex flex-col my-2">
-                <span className="text-[#6E6D6d] font-Poppins font-[400]">Funding</span>
-                <span className="text-[#3D3D3D font-[400] py-1">Bootstrapped</span>
+                <span className="text-[#6E6D6d] font-Poppins font-[400]">
+                  Funding
+                </span>
+                <span className="text-[#3D3D3D font-[400] py-1">
+                  Bootstrapped
+                </span>
               </div>
 
               <div className="flex flex-col my-2">
-                <span className="text-[#6E6D6d] font-Poppins font-[400]">Founded By</span>
-                <span className="text-[#3D3D3D font-[400] py-1">Scott Farquhar, Mike Cannon-Brookes</span>
+                <span className="text-[#6E6D6d] font-Poppins font-[400]">
+                  Founded By
+                </span>
+                <span className="text-[#3D3D3D font-[400] py-1">
+                  Scott Farquhar, Mike Cannon-Brookes
+                </span>
               </div>
             </div>
           </div>
         </div>
-        <span className="relative left-[70px] bottom-6 underline text-[#B0B0B0] font-[400] font-Poppins">Report this listing</span>
+        <span className="relative left-[70px] bottom-8 underline text-[#B0B0B0] font-[400] font-Poppins">
+          Report this listing
+        </span>
       </div>
 
       {/* right Section Start */}
@@ -204,8 +253,8 @@ const Section = () => {
             <span className="text-[#DC4A2D]">Delete job</span>
           </button>
 
-          <button className="bg-[#DC4A2D] flex py-4 px-10 rounded-[8px] border-2 border-[#3FED3CA] ">
-            <img src={editIcon} className="mt-1" alt="edit-Icon" />
+          <button className="bg-[#DC4A2D] flex py-4 px-10 rounded-[8px] border-2 border-[#3FED3CA]  ">
+            <img src={editIcon} className="mt-1 mr-[1.5px]" alt="edit-Icon" />
             <span className="text-white">Edit Job</span>
           </button>
         </div>
