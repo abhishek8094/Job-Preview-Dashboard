@@ -1,11 +1,14 @@
-import './App.css'
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Section from "./components/Section";
 
 function App() {
   return (
-    <div>
-<h1 className='text-2xl'>hi</h1>
-    </div>
-  )
+    <>
+      <Navbar />
+      <Section />
+    </>
+  );
 }
 
-export default App
+export default App;
