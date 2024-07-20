@@ -16,7 +16,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Navbar Middle Part   */}
+        {/* Navbar Middle Part  */}
         <div className="w-[683px] flex h-[78.85px]">
           <div className="w-[109px] h-[58px] bg-[#DC4A2D] border-2 border-[#FCB4A5] rounded-[49px] mt-2.5 shadow-[ 0px 4px 4px 0px #00000040]">
             <div className="w-[80px] mx-3 flex p-3 gap-2 h-[30px]">
