@@ -7,6 +7,7 @@ import AtlassianIcon from "../assets/images/Rectangle 5.svg";
 import DownArrowIcon from "../assets/images/chevron-down.png";
 
 const Navbar = () => {
+  
   return (
     <nav className="w-full p-2 text-[#FFFF]">
       <div className="flex justify-center gap-60 items-center h-[65px] mt-5 mb-4 relative ">
