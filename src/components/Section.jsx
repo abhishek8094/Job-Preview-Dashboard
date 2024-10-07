@@ -15,309 +15,323 @@ import AtlassianImg from "../assets/images/Rectangle 43.svg";
 
 const Section = () => {
   return (
-    <div className="flex w-full">
-      {/* left Section start */}
-      <div className="w-[78%] ">
-        {/* Role start  */}
-        <div className="w-[662px] relative left-[60px] top-[5px]  h-[107px]">
-          <div className="h-[53px] flex justify-between gap-[12px]">
-            <div className="font-Poppins font-[700] text-[35px] leading-[52.5px] text-[#3D3D3D]">
+    <div className="flex flex-col lg:flex-row w-full">
+      {/* Left Section start */}
+      <div className="w-full lg:w-[78%]">
+        {/* Role start */}
+        <div className="w-full lg:w-[662px] relative left-0 lg:left-[60px] top-0 lg:top-[5px] h-auto lg:h-[107px]">
+          <div className="h-auto lg:h-[53px] flex flex-col lg:flex-row justify-between gap-4 lg:gap-[12px]">
+            <div className="font-Poppins font-[700] text-[24px] lg:text-[35px] leading-[32px] lg:leading-[52.5px] text-[#3D3D3D]">
               Senior Product Designer
             </div>
-            <div className="font-Poppins font-[400] p-5 text-[14px] leading-[21px] text-[#88888]">
-              posted 2days ago
+            <div className="font-Poppins font-[400] text-[14px] mt-5 leading-[21px] text-[#888888]">
+              posted 2 days ago
             </div>
-            <div className="flex text-sm w-[59px] h-[22px] mt-5 rounded-full border-1 bg-[#ABEFC6] text-[#ECFDF3]">
-              <div className="w-[8px] h-[8px] m-[6px] text-sm rounded-full outline-0 bg-[#067647]"></div>
-              <div className="font-Poppins font-[500] text-[12px] leading-[18px] items-center text-[#067647]">
-                open
+            <div className="flex text-sm w-full lg:w-[59px] h-[22px] mt-2 lg:mt-5 rounded-full border border-[#ABEFC6] bg-[#ABEFC6] text-[#ECFDF3]">
+              <div className="w-[8px] h-[8px] m-[6px] rounded-full bg-[#067647]"></div>
+              <div className="font-Poppins font-[500] text-[12px] leading-[18px] text-[#067647]">
+                Open
               </div>
             </div>
           </div>
-          <div className=" relative top-5 flex  gap-[16px] w-[379px] h-[30px]">
-            <div>
+          <div className="relative top-4 lg:top-5 flex flex-wrap lg:flex-nowrap gap-4 lg:gap-[16px] w-full lg:w-[379px] h-auto lg:h-[30px]">
+            <div className="flex items-center">
               <img
                 className="w-[24px] h-[24px] mt-1"
                 src={locationIcon}
                 alt="location"
               />
+              <span className="font-Poppins font-[400] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[30px] text-[#5D5D5D] ml-2">
+                Delaware, USA
+              </span>
             </div>
-            <div className="font-Poppins font-[400] text-[20px] w-[143px] height-[30px] leading-[30px] text-[#5D5D5D]">
-              Delaware, USA
-            </div>
-            <div className="w-2 h-2 bg-[#D1D1D1] relative top-3 rounded-full"></div>
-            <div className="flex w-[168px] h-[30px] gap-[12px]">
-              <div>
-                <img
-                  className="w-[24px] h-[24px] mt-1"
-                  src={coinsStack}
-                  alt="coins"
-                />
-              </div>
-              <div className="font-Poppins Font-[400] text-[20px] leading-[30px] text-[#5D5D5D]">
+            <div className="w-2 h-2 bg-[#D1D1D1] rounded-full self-center"></div>
+            <div className="flex items-center gap-2">
+              <img
+                className="w-[24px] h-[24px] mt-1"
+                src={coinsStack}
+                alt="coins"
+              />
+              <span className="font-Poppins font-[400] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[30px] text-[#5D5D5D]">
                 $300k-$400k
-              </div>
+              </span>
             </div>
           </div>
         </div>
+        {/* Role end */}
 
-        {/* Role end  */}
-        <hr className="w-full p-4 border-1 relative top-6 border-[#E7E7E7]" />
+        <hr className="w-full border border-[#E7E7E7] my-4 lg:my-6" />
 
-        <div className="flex gap-28 p-6 ml-10">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-28 p-4 lg:p-6 ml-4 lg:ml-10">
+          {/* Skills Required */}
           <div className="flex flex-col gap-3">
-            <span className="text-[#6E6D6D] font-[400] font-Poppins">
-              skills Required
+            <span className="text-[#6E6D6D] font-Poppins font-[400]">
+              Skills Required
             </span>
-            <button className="flex rounded-md border-2 shadow-md px-2 py-1 w-24 bg-[#ffff] border-[#D0D5DD] ">
-              <img src={figmaIcon} className="mt-1 mr-1" alt="figma-Icon" />
-              <span>Figma</span>
-            </button>
-            <button className="flex rounded-md border-2 shadow-md px-1 py-1  bg-[#ffff] border-[#D0D5DD] ">
-              <img src={adobeIcon} className="mt-1 mr-1" alt="adobe-Icon" />
-              <span>Adobe illustrator</span>
-            </button>
-
-            <button className="flex rounded-md border-2 shadow-sm w-[105px] py-1 bg-[#ffff] border-[#D0D5DD] ">
-              <img src={adobeXDIcon} className="mt-1 ml-1" alt="icon" />
-              <span className="ml-1">Adobe XD</span>
-            </button>
+            <div className="flex flex-wrap gap-2">
+              <button className="flex items-center rounded-md border-2 shadow-md px-2 py-1 bg-white border-[#D0D5DD]">
+                <img src={figmaIcon} className="w-5 h-5 mr-1" alt="Figma Icon" />
+                <span className="text-sm">Figma</span>
+              </button>
+              <button className="flex items-center rounded-md border-2 shadow-md px-2 py-1 bg-white border-[#D0D5DD]">
+                <img src={adobeIcon} className="w-5 h-5 mr-1" alt="Adobe Icon" />
+                <span className="text-sm">Adobe Illustrator</span>
+              </button>
+              <button className="flex items-center rounded-md border-2 shadow-sm px-2 py-1 bg-white border-[#D0D5DD]">
+                <img src={adobeXDIcon} className="w-5 h-5 mr-1" alt="Adobe XD Icon" />
+                <span className="text-sm">Adobe XD</span>
+              </button>
+            </div>
           </div>
+
+          {/* Preferred Language */}
           <div className="flex flex-col">
-            <span className="text-[#6E6D6D] font-[400] font-Poppins">
+            <span className="text-[#6E6D6D] font-Poppins font-[400]">
               Preferred Language
             </span>
-            <span className="text-[#3D3D3D] font-[400] font-Poppins py-2">
+            <span className="text-[#3D3D3D] font-Poppins font-[400] py-2">
               English
             </span>
           </div>
+
+          {/* Type */}
           <div className="flex flex-col">
-            <span className="text-[#6E6D6D] font-[400] font-Poppins ">
+            <span className="text-[#6E6D6D] font-Poppins font-[400]">
               Type
             </span>
-            <span className="text-[#3D3D3D] font-[400] font-Poppins py-2">
+            <span className="text-[#3D3D3D] font-Poppins font-[400] py-2">
               Full time
             </span>
           </div>
+
+          {/* Years of Experience */}
           <div className="flex flex-col">
-            <span className="text-[#6E6D6D] font-[400] font-Poppins">
+            <span className="text-[#6E6D6D] font-Poppins font-[400]">
               Years of Experience
             </span>
-            <span className="text-[#3D3D3D] font-[400] font-Poppins py-2">
+            <span className="text-[#3D3D3D] font-Poppins font-[400] py-2">
               3+ Years of Experience
             </span>
           </div>
         </div>
-        <hr className="w-full p-4 border-1 relative top-1 border-[#E7E7E7]" />
 
-        {/* About the job start  */}
-        <div className=" p-8 ml-4 relative left-5 ">
-          <span className="text-[#6E6D6D] font-[400] font-Poppins">
+        <hr className="w-full border border-[#E7E7E7] my-4 lg:my-6" />
+
+        {/* About the Job */}
+        <div className="p-4 lg:p-8 ml-0 lg:ml-5">
+          <span className="text-[#6E6D6D] font-Poppins font-[400]">
             About the Job
           </span>
-          <ol className="py-2">
-            <li className="text-[#3D3D3D] font-Poppins font-[400] ">
-              1. Handle the UI/UX research design
+          <ol className="py-2 list-decimal list-inside">
+            <li className="text-[#3D3D3D] font-Poppins font-[400] py-1">
+              Handle the UI/UX research design
             </li>
-            <li className="text-[#3D3D3D] font-Poppins font-[400] ">
-              2. Work on researching on latest web applications designs & trends
+            <li className="text-[#3D3D3D] font-Poppins font-[400] py-1">
+              Work on researching the latest web applications designs & trends
             </li>
-            <li className="text-[#3D3D3D] font-Poppins font-[400] ">
-              3. Work on conceptualizing and visualizing
+            <li className="text-[#3D3D3D] font-Poppins font-[400] py-1">
+              Work on conceptualizing and visualizing
             </li>
-            <li className="text-[#3D3D3D] font-Poppins font-[400] ">
-              4. Work on creating graphics content and other graphic related
-              works
+            <li className="text-[#3D3D3D] font-Poppins font-[400] py-1">
+              Create graphics content and other graphic-related works
             </li>
           </ol>
-          <div>
-            <span className="text-[#3D3D3D] font-Poppins font-[400] ">
-              {" "}
+
+          {/* Benefits */}
+          <div className="mt-4">
+            <span className="text-[#3D3D3D] font-Poppins font-[400]">
               Benefits:
             </span>
-            <ul>
-              <li className="text-[#3D3D3D] font-Poppins ml-2 font-[400] ">
-                {" "}
-                <span className="font-[700] relative bottom-1">.</span> Health
-                insurance
+            <ul className="list-disc list-inside ml-4">
+              <li className="text-[#3D3D3D] font-Poppins font-[400]">
+                Health insurance
               </li>
-              <li className="text-[#3D3D3D] font-Poppins ml-2 font-[400] ">
-                {" "}
-                <span className="font-[700] relative bottom-1">.</span> Provident
-                Fund
-              </li>
-            </ul>
-          </div>
-          <div>
-            <span className="text-[#3D3D3D] font-Poppins font-[400] ">
-              Schedule
-            </span>
-            <ul>
-              <li className="text-[#3D3D3D] font-Poppins ml-2 font-[400] ">
-                <span className="font-[700] relative bottom-1">.</span> Day
-                Shift
+              <li className="text-[#3D3D3D] font-Poppins font-[400]">
+                Provident Fund
               </li>
             </ul>
           </div>
 
-          <span className="text-[#3D3D3D] font-Poppins font-[400] ">
-            Supplement pay types:
-            <ul>
-              <li className="text-[#3D3D3D] font-Poppins ml-2 font-[400] ">
-                {" "}
-                <span className="font-[700] relative bottom-1">.</span>{" "}
+          {/* Schedule */}
+          <div className="mt-4">
+            <span className="text-[#3D3D3D] font-Poppins font-[400]">
+              Schedule
+            </span>
+            <ul className="list-disc list-inside ml-4">
+              <li className="text-[#3D3D3D] font-Poppins font-[400]">
+                Day Shift
+              </li>
+            </ul>
+          </div>
+
+          {/* Supplement Pay Types */}
+          <div className="mt-4">
+            <span className="text-[#3D3D3D] font-Poppins font-[400]">
+              Supplement pay types:
+            </span>
+            <ul className="list-disc list-inside ml-4">
+              <li className="text-[#3D3D3D] font-Poppins font-[400]">
                 Performance bonus
               </li>
             </ul>
-          </span>
+          </div>
         </div>
-        {/* About the job end  */}
+        {/* About the Job end */}
 
-        <hr className="w-full p-6 border-1 relative top-2 border-[#E7E7E7]" />
+        <hr className="w-full border border-[#E7E7E7] my-4 lg:my-6" />
 
-        <div className=" relative left-10 p-4 m-4 ">
-          <div className="flex gap-3 ">
-            <img src={AtlassianImg} alt="Atlassian-img" />
-            <span className="flex justify-center items-center text-[#4f4f4f] font-[600]">
-              Atlassian
-            </span>
-            <button className=" items-center bg-[#E0EBF9] text-[#003788] w-16 h-6 mt-2 font-[700] font-Poppins rounded-md">
+        {/* Company Information */}
+        <div className="p-4 lg:p-10 m-4">
+          <div className="flex flex-col lg:flex-row items-center gap-3">
+            <img src={AtlassianImg} alt="Atlassian-img" className="w-16 h-16" />
+            <span className="text-[#4f4f4f] font-[600] text-lg">Atlassian</span>
+            <button className="mt-2 lg:mt-0 bg-[#E0EBF9] text-[#003788] w-24 h-8 font-Poppins font-[700] rounded-md">
               Follow
             </button>
           </div>
 
-          <div className="flex gap-24 my-5">
-            <div className="flex flex-col">
-              <div className="flex flex-col">
-                <span className="text-[#6E6D6d] font-Poppins font-[400]">
+          <div className="flex flex-col lg:flex-row justify-between gap-8 my-5">
+            {/* Left Column */}
+            <div className="flex flex-col gap-4">
+              <div>
+                <span className="text-[#6E6D6D] font-Poppins font-[400]">
                   Company size
                 </span>
-                <span className="text-[#3D3D3D font-[400] py-1">
+                <span className="text-[#3D3D3D] font-Poppins font-[400] block">
                   1k - 2k Employees
                 </span>
               </div>
 
-              <div className="flex flex-col my-2">
-                <span className="text-[#6E6D6d] font-Poppins font-[400]">
+              <div>
+                <span className="text-[#6E6D6D] font-Poppins font-[400]">
                   Sector
                 </span>
-                <span className="text-[#3D3D3D font-[400] py-1">
+                <span className="text-[#3D3D3D] font-Poppins font-[400] block">
                   Information Technology, Infrastructure
                 </span>
               </div>
 
-              <div className="flex flex-col my-2">
-                <span className="text-[#6E6D6d] font-Poppins font-[400]">
+              <div>
+                <span className="text-[#6E6D6D] font-Poppins font-[400]">
                   Founded In
                 </span>
-                <span className="text-[#3D3D3D font-[400] py-1">2019</span>
+                <span className="text-[#3D3D3D] font-Poppins font-[400] block">
+                  2019
+                </span>
               </div>
             </div>
-            <div className="flex flex-col">
-              <div className="flex flex-col">
-                <span className="text-[#6E6D6d] font-Poppins font-[400]">
+
+            {/* Right Column */}
+            <div className="flex flex-col gap-4">
+              <div>
+                <span className="text-[#6E6D6D] font-Poppins font-[400]">
                   Type
                 </span>
-                <span className="text-[#3D3D3D font-[400] my-1">Private</span>
+                <span className="text-[#3D3D3D] font-Poppins font-[400] block">
+                  Private
+                </span>
               </div>
-              <div className="flex flex-col my-2">
-                <span className="text-[#6E6D6d] font-Poppins font-[400]">
+
+              <div>
+                <span className="text-[#6E6D6D] font-Poppins font-[400]">
                   Funding
                 </span>
-                <span className="text-[#3D3D3D font-[400] py-1">
+                <span className="text-[#3D3D3D] font-Poppins font-[400] block">
                   Bootstrapped
                 </span>
               </div>
 
-              <div className="flex flex-col my-2">
-                <span className="text-[#6E6D6d] font-Poppins font-[400]">
+              <div>
+                <span className="text-[#6E6D6D] font-Poppins font-[400]">
                   Founded By
                 </span>
-                <span className="text-[#3D3D3D font-[400] py-1">
+                <span className="text-[#3D3D3D] font-Poppins font-[400] block">
                   Scott Farquhar, Mike Cannon-Brookes
                 </span>
               </div>
             </div>
           </div>
         </div>
-        <span className="relative left-[70px] bottom-8 underline text-[#B0B0B0] font-[400] font-Poppins">
+
+        <span className="block text-center lg:text-left text-[#B0B0B0] font-Poppins font-[400] underline mb-8">
           Report this listing
         </span>
       </div>
+      {/* Left Section end */}
 
-      {/* right Section Start */}
-      <div className="w-[22%] p-4 border-x-2 border-[#E7E7E7] ">
-        <div className="flex  gap-[10px] w-full">
-          <button className="p-2 border-[0.8px] border-[#DC4A2D] rounded-[8px] bg-[#FEF4F2] px-4 flex items-center justify-center">
-            <img src={deleteIcon} className="mr-1" alt="delete-Icon" />
-            <span className="text-[#DC4A2D]">Delete job</span>
+      {/* Right Section Start */}
+      <div className="w-full lg:w-[28%] p-4 border-t lg:border-t-0 lg:border-l border-[#E7E7E7]">
+        <div className="flex flex-col lg:flex-row gap-4 lg:gap-[48px] w-full ml-4">
+          <button className="p-2 border border-[#DC4A2D] rounded-md bg-[#FEF4F2] flex items-center justify-center">
+            <img src={deleteIcon} className="mr-2 w-5 h-5" alt="Delete Icon" />
+            <span className="text-[#DC4A2D] text-sm">Delete Job</span>
           </button>
 
-          <button className="bg-[#DC4A2D] flex py-4 px-10 rounded-[8px] border-2 border-[#3FED3CA]  ">
-            <img src={editIcon} className="mt-1 mr-[1.5px]" alt="edit-Icon" />
-            <span className="text-white">Edit Job</span>
+          <button className="flex items-center justify-center bg-[#DC4A2D] py-2 px-4 rounded-md border-2 border-[#3FED3CA]">
+            <img src={editIcon} className="mr-2 w-5 h-8" alt="Edit Icon" />
+            <span className="text-white text-sm">Edit Job</span>
           </button>
         </div>
 
-        <div className=" flex flex-col py-4  mt-5">
+        {/* Statistics */}
+        <div className="flex flex-col py-4 mt-5">
+          {/* Applicants */}
           <div className="flex justify-between items-center p-4">
-            <div className="flex">
-              <img src={applicantIcon} className="mx-2" alt="applicant-Icon" />
-              <span>Applicants</span>
+            <div className="flex items-center">
+              <img src={applicantIcon} className="mx-2 w-5 h-5" alt="Applicants Icon" />
+              <span className="font-Poppins font-[500]">Applicants</span>
             </div>
-            <span>400</span>
+            <span className="font-Poppins font-[500]">400</span>
           </div>
+          <hr className="border-t border-[#E7E7E7]" />
 
-          <hr className="bg-[#E7E7E7]" />
-
+          {/* Matches */}
           <div className="flex justify-between items-center p-4">
-            <div className="flex">
-              <img src={matchIcon} className="mx-2" alt="match-Icon" />
-              <span>Matches</span>
+            <div className="flex items-center">
+              <img src={matchIcon} className="mx-2 w-5 h-5" alt="Matches Icon" />
+              <span className="font-Poppins font-[500]">Matches</span>
             </div>
-            <span>400</span>
+            <span className="font-Poppins font-[500]">400</span>
           </div>
+          <hr className="border-t border-[#E7E7E7]" />
 
-          <hr className="bg-[#E7E7E7]" />
-
+          {/* Messages */}
           <div className="flex justify-between items-center p-4">
-            <div className="flex">
-              <img src={messageIcon} className="mx-2" alt="message-Icon" />
-              <span>Messages</span>
+            <div className="flex items-center">
+              <img src={messageIcon} className="mx-2 w-5 h-5" alt="Messages Icon" />
+              <span className="font-Poppins font-[500]">Messages</span>
             </div>
-            <span>400</span>
+            <span className="font-Poppins font-[500]">400</span>
           </div>
-          <hr className="bg-[#E7E7E7]" />
+          <hr className="border-t border-[#E7E7E7]" />
 
+          {/* Views */}
           <div className="flex justify-between items-center p-4">
-            <div className="flex">
-              <img src={eyeIcon} className="mx-2" alt="eye-Icon" />
-              <span>Views</span>
+            <div className="flex items-center">
+              <img src={eyeIcon} className="mx-2 w-5 h-5" alt="Views Icon" />
+              <span className="font-Poppins font-[500]">Views</span>
             </div>
-            <span>400</span>
+            <span className="font-Poppins font-[500]">400</span>
           </div>
         </div>
 
-        {/* Quote Container start  */}
-        <div className="border-2 p-4 border-[#F7F7F7] bg-[#FFFFFF] shadow-lg rounded-[12px]">
-          <span className="font-Poppins font-[500] p-4 leading-[30px] text-[#000000] ">
-            "A quote from a Atlassian "
+        {/* Quote Container */}
+        <div className="border-2 border-[#F7F7F7] bg-white shadow-lg rounded-lg p-4 mt-4">
+          <span className="font-Poppins font-[500] text-[#000000]">
+            "A quote from Atlassian"
           </span>
 
-          <div className="flex p-4 ">
-            <img src={avatarIcon} alt="avatar-icon" />
-            <div className="flex ml-4 flex-col">
-              <span className="text-[#000000] font-[500] font-Poppins">
-                Name
-              </span>
-              <span className="text-[#828282] font-[500] font-Poppins">
-                Description
-              </span>
+          <div className="flex items-center mt-4">
+            <img src={avatarIcon} className="w-10 h-10" alt="Avatar Icon" />
+            <div className="flex flex-col ml-4">
+              <span className="text-[#000000] font-Poppins font-[500]">Name</span>
+              <span className="text-[#828282] font-Poppins font-[500]">Description</span>
             </div>
           </div>
         </div>
-        {/* Quote Container end  */}
+        {/* Quote Container end */}
       </div>
+      {/* Right Section end */}
     </div>
   );
 };
